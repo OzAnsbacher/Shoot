@@ -1,0 +1,28 @@
+<section class="home-page-c flex column ">
+    <h1 class="home-title">שוּט</h1>
+    <div class="flex justify-center ">
+
+        <div class="creat-home">
+            <h2>משחק חדש</h2>
+            <img src="./assets/img/game.gif" alt="">
+
+        </div>
+        <!-- <form #f="ngForm" novalidate>
+            <input name="first" ngModel required #first="ngModel">
+            <button>Submit</button>
+        </form> -->
+
+        <!-- <p>Form value: {{ f.value | json }}</p> -->
+        <!-- <p>First name value: {{ first.value }}</p> -->
+        <!-- <p>First name valid: {{ first.valid }}</p> -->
+
+        <form #f="ngForm" novalidate class="enter-home">
+            <input name="first" ngModel required #first="ngModel" class="home-code" type="text" placeholder="קוד משחק">
+            <a class="home-btn-enter" routerLink="/play/{{first.value}}">
+                כניסה
+            </a>
+          
+        </form>
+    </div>
+
+</section>

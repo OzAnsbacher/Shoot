@@ -1,0 +1,15 @@
+<section>
+ 
+            <section class="container-question">
+                <div class="img-quiz flex column align-center">
+                    <h3 class="title-question">{{question.title}}</h3>
+                    <img *ngIf="question.img" class="img-question" src="{{question.img}}" alt="">
+                    <img  *ngIf="!question.img" class="img-question" src="../../../assets/img/defalt.jpg" alt="">
+                    <!-- <h4>{{question.answers|json}}</h4> -->
+                </div>
+                <app-answers class="answers" [answers]="question.answers" (onAnswer)="onSelectAnswer($event)"></app-answers>
+            </section>
+
+
+
+</section>

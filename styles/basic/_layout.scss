@@ -1,0 +1,218 @@
+.main-layout {
+  // max-width: 1340px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1450px) {
+  .main-layout {
+    max-width: 1200px;
+    .explore-cards-conteiner {
+      gap: 1.2em;
+      .explore-card {
+        height: 390px;
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .main-layout {
+    max-width: 1000px;
+    .explore-cards-conteiner {
+      grid-template-columns: repeat(3, 1fr);
+      .explore-card {
+        height: 380px;
+      }
+    }
+    .search-header {
+      input {
+        width: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .main-layout {
+    max-width: 900px;
+    .explore-cards-conteiner {
+      grid-template-columns: repeat(3, 1fr);
+      .explore-card {
+        height: 390px;
+      }
+    }
+  }
+}
+@media (max-width: 950px) {
+  .main-layout {
+    max-width: 750px;
+    .explore-cards-conteiner {
+      grid-template-columns: repeat(2, 1fr);
+      .explore-card {
+        height: 398px;
+      }
+    }
+    .search-header {
+      input {
+        margin: 0;
+        width: 200px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .main-layout {
+    max-width: 600px;
+    .explore-cards-conteiner {
+      .explore-card {
+        height: 380px;
+      }
+    }
+    .search-section {
+      display: flex;
+      flex-direction: column;
+      img {
+        display: none;
+      }
+      .search {
+        border-radius: 8px;
+        width: 100%;
+      }
+      .search-btn {
+        border-radius: 8px;
+        width: 100%;
+      }
+    }
+    .popular-categories{
+      display: none ;
+    }
+    .trusted-by-text {
+      display: none;
+    }
+    .imgs-ul {
+      gap: 20px;
+    }
+  }
+  .category-conteiner {
+    display: none;
+  }
+}
+//
+@media (max-width: 650px) {
+  .main-layout {
+    max-width: 500px;
+    .explore-cards-conteiner {
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+      margin-bottom: 10px;
+      .explore-card {
+        height: 500px;
+      }
+      .el-carousel__container {
+        height: 300px !important;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .main-layout {
+    max-width: 350px;
+    .explore-cards-conteiner {
+      //   margin: auto;
+      //   margin-bottom: 10px;
+      .explore-card {
+        height: 400px;
+        .explore-grid-details {
+          height: 170px;
+        }
+        .explore-card-title {
+          padding-bottom: 10px;
+        }
+      }
+      .el-carousel__container {
+        height: 230px !important;
+      }
+    }
+    .search-header {
+      input {
+        margin: 0;
+        width: 150px;
+      }
+    }
+    .ex-filter-conteiner {
+      flex-direction: column;
+      align-items: baseline;
+      .ex-btn {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+    }
+ 
+    .carousel__track {
+      margin: 0 100px 0 100px;
+      gap: 80px !important;
+    }
+    .carousel__next,
+    .carousel__prev {
+      display: none;
+    }
+    .imgs-ul {
+      display: none ;
+    }
+    &.categories-container{
+      margin-top: 50px ;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .main-layout {
+    max-width: 280px;
+    .explore-cards-conteiner {
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+      margin-bottom: 10px;
+      .explore-card {
+        height: 380px;
+      }
+      .explore-grid-details {
+        height: 180px;
+      }
+      .el-carousel__container {
+        height: 200px !important;
+      }
+    }
+    .search-header {
+      input {
+        display: none;
+      }
+      .search-btn-new {
+        display: none;
+      }
+    }
+    .carousel__track {
+      margin: 0 40px 0 40px;
+      gap: 40px !important;
+    }
+    .carousel__viewport {
+      margin: auto;
+    }
+  }
+}
+// .main-layout-grid {
+//     display: grid;
+//     grid-template-columns: $layoutPadding 1fr $layoutPadding;
+//     > * {
+//         grid-column: 2;
+//     }
+//     > *.full {
+//         grid-column: 1 / -1;
+//     }
+//     @include for-narrow-layout {
+//         @include layoutGTC($break-narrow);
+//     }
+//     @include for-normal-layout {
+//         @include layoutGTC($break-normal);
+//     }
+//     @include for-wide-layout {
+//         @include layoutGTC($break-wide);
+//     }
+// }

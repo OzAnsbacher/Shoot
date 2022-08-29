@@ -1,0 +1,14 @@
+// COLOR PALETTE
+$clr1: rgb(204, 204, 204);
+$clr2: rgb(51, 51, 51);
+$clr3: rgb(117 117 117);
+
+// LAYOUT
+$layoutPadding: 20px;
+// LAYOUT BREAKPOINTS
+$break-narrow: 600px;
+$break-normal: 900px;
+$break-wide: 1400px;
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;

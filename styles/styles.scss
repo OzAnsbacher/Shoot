@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+//BASIC
+
+@import './basic/base';
+@import './basic/helpers';
+@import './basic/screen';
+@import './basic/layout';
+@import './basic/fonts';
+
+//SETUP
+
+@import './setup/variables';
+@import './setup/mixins';
+@import './setup/functions';
+
+//VIEWS
+
+@import './views/home-page'

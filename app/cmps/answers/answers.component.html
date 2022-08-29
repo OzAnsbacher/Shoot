@@ -1,0 +1,5 @@
+<section>
+    <ul class="answers-question flex">
+        <li class="answer-question"  *ngFor="let answer of answers; index as idx " [ngClass]="'bgc'+idx" (click)="onAnswer.emit(idx)">{{answer}}</li>
+    </ul>
+</section>
